@@ -20,6 +20,10 @@ To enable grammar-specific type definitions:
    ```
    npx ohm generateBundles --withTypes src
    ```
+   Or, if you want an ES module to be generated instead:
+   ```
+   npx ohm generateBundles --esm --withTypes src
+   ```
 
    ...will create `src/my-grammar.ohm-bundle.js` and `src/my-grammar.ohm-bundle.d.ts`. You can directly import the bundle like this:
 
